@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600");
-@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -11,203 +11,76 @@ body {
   width: 100%;
 }
 
-.tommy:hover {
-  transform: scale(1.2);
-}
-
-.nameSection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-}
-
-.iframely-embed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  background: white;
-}
-
-#app {
-  display: flex;
-  align-items: center;
-  padding-bottom: 4vmin;
-  height: 100vh;
-  width: 100%;
-  background: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #3a3535;
-}
-
-.app-img {
-  display: flex;
-  transition: 1s ease-in-out;
-}
-.app-img:hover {
-  transform: scale(1.1);
-}
-
-.title {
-  padding-left: 1em;
-  grid-column: 1 / -1;
-  grid-row: 1;
-  font-family: "Kay Pho Du", serif;
-  font-size: 6vw;
-  width: 100%;
-  z-index: 2;
-
-  .title-inner {
-    display: inline-block;
-  }
-}
-
-@keyframes text-clip {
-  from {
-    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-
-@keyframes outer-left {
-  from {
-    transform: translateX(50%);
-  }
-  to {
-    transform: none;
-  }
-}
-
-@keyframes inner-left {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: none;
-  }
-}
-
-.cafe,
-.mozart {
-  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.title-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both;
-}
-
-.cafe-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both,
-    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.mozart-inner {
-  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.title {
-  animation: outer-left 1s 1s ease both;
-}
-
-.cafe {
-  /* // start */
-  .cafe-inner {
-    display: inline-block;
-  }
-}
-
-.mozart {
-  display: inline-block;
-}
-
-.title-inner:hover {
-  color: white;
-}
-
-h1 {
-  color: #484848;
-  font-size: 50px;
-  font-weight: bold;
-  font-family: monospace;
-  letter-spacing: 7px;
-  padding: 2rem 0rem 2rem 0rem;
+/* Landingpage */
+.textContainer {
+  margin-left: 10rem;
+  gap: 200rem;
   cursor: pointer;
 }
-h1 span {
-  transition: 0.5s linear;
-}
-h1:hover span:nth-child(1) {
-  margin-right: 5px;
-}
-h1:hover span:nth-child(1):after {
-  content: "-";
-}
-h1:hover span:nth-child(2) {
-  margin-left: 30px;
-}
-h1:hover span {
+
+#h1 {
+  font-size: 150px;
+  font-weight: 900;
   color: #fff;
-  text-shadow: 0 0 10px #706e6e, 0 0 20px #ffffff, 0 0 40px #4e4949;
+}
+#h2 {
+  font-size: 150px;
+  font-weight: 900;
+  color: red;
+}
+#h3 {
+  font-size: 150px;
+  font-weight: 900;
+  color: red;
 }
 
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 105%;
-}
-.formInput {
-  display: flex;
-  border: none;
-  outline: none;
-  gap: 2rem;
-}
-.formInput input {
-  display: flex;
-  width: 25rem;
-  flex: 1;
-  border: none;
-  padding: 1rem 0.5rem 1rem 0.5rem;
-  background: rgba(255, 255, 255, 0.467);
-  color: white;
-  outline: none;
-  border-radius: 1rem;
+.hide {
+  display: none;
 }
 
-.formInput textarea {
+@media (max-width = 600px) {
+  #h1 {
+    font-size: 50px;
+  }
+  #h2 {
+    font-size: 100px;
+  }
+  #h3 {
+    font-size: 100px;
+  }
+}
+
+/* About page */
+.aboutContainer {
+  padding-bottom: 10rem;
+}
+.gap {
+  gap: 5rem;
+}
+
+.aboutH1 h1 {
+  font-size: 100px;
+  color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.aboutText {
+  color: #fff;
+}
+.aboutText h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 8rem;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.aboutTextP {
   display: flex;
-  width: 25rem;
-  height: 20vh;
-  flex: 1;
-  border: none;
-  padding: 1rem 0.5rem 1rem 0.5rem;
-  background: rgba(255, 255, 255, 0.467);
-  color: white;
-  outline: none;
-  border-radius: 1rem;
+  flex-direction: column;
+  text-align: justify;
+  gap: 1rem;
+  line-height: 2rem;
+  font-size: 19px;
+  font-family: "Noto Sans TC", sans-serif;
 }
-
-.formInput input:hover {
-  transform: scale(1.005);
-}
-
-form button {
-  padding: 0.5rem 2rem;
-  color: white;
-  background: none;
-  border: none;
-  border-radius: 1rem;
-}
-form button:hover {
-  transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.164);
+.aboutTextP1 {
+  font-size: 30px;
 }
