@@ -57,7 +57,22 @@ body {
 .gap {
   gap: 5rem;
 }
+a span {
+  letter-spacing: 2px;
+  padding: 2rem 0rem 2rem 0rem;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
 
+a:hover span:nth-child(1):after {
+  content: "owolabi";
+}
+a:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+a:hover span {
+  color: #fff;
+}
 .aboutH1 h1 {
   font-size: 100px;
   color: #fff;
@@ -83,4 +98,58 @@ body {
 }
 .aboutTextP1 {
   font-size: 30px;
+}
+.aboutTextA {
+  color: green;
+  text-decoration: none;
+}
+.aboutTextA:hover {
+  color: rgb(163, 221, 163);
+  align-items: end;
+}
+
+.formInput {
+  display: flex;
+  border: none;
+  outline: none;
+  gap: 2rem;
+}
+.formInput input {
+  display: flex;
+  width: 100%;
+  border: none;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  background: rgba(255, 255, 255, 0.467);
+  color: white;
+  outline: none;
+  border-radius: 1rem;
+}
+
+.formInput textarea {
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  flex: 1;
+  border: none;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  background: rgba(255, 255, 255, 0.467);
+  color: white;
+  outline: none;
+  border-radius: 1rem;
+}
+
+.formInput input:hover {
+  transform: scale(1.005);
+}
+
+form button {
+  padding: 0.5rem 2rem;
+  color: white;
+  background: none;
+  border: none;
+  border-radius: 1rem;
+}
+form button:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.164);
 }

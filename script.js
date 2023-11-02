@@ -12,7 +12,6 @@ hTag.onmouseover = function () {
 
   hTag.addEventListener("click", () => {
     location.href = "/about.html";
-    return aboutclick;
   });
 };
 hTag.onmouseout = function () {
@@ -20,24 +19,22 @@ hTag.onmouseout = function () {
 };
 
 h2Tag.onmouseover = function () {
-    h2Tag.innerHTML = `${work.textContent}`;
-    
-    hTag.addEventListener("click", () => {
-        location.href = "/work.html";
-        return workclick;
-      });
+  h2Tag.innerHTML = `${work.textContent}`;
+
+  h2Tag.addEventListener("click", () => {
+    location.href = "/work.html";
+  });
 };
 h2Tag.onmouseout = function () {
   h2Tag.innerHTML = `I am`;
 };
 
 h3Tag.onmouseover = function () {
-    h3Tag.innerHTML = `${contact.textContent}`;
-    
-    hTag.addEventListener("click", () => {
-        location.href = "/contact.html";
-        return contactclick;
-      });
+  h3Tag.innerHTML = `${contact.textContent}`;
+
+  h3Tag.addEventListener("click", () => {
+    location.href = "/contact.html";
+  });
 };
 h3Tag.onmouseout = function () {
   h3Tag.innerHTML = `Muiz`;
