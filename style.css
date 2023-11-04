@@ -11,6 +11,22 @@ body {
   width: 100%;
 }
 
+/* SideBar */
+.sideBar {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  margin-left: 1rem;
+  gap: 1rem;
+  line-height: px;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.sideBar {
+  writing-mode: vertical-rl;
+}
+
 /* Landingpage */
 .textContainer {
   margin-left: 10rem;
@@ -222,5 +238,8 @@ form button:hover {
   }
   .aboutContainer {
     padding-bottom: 2rem;
+  }
+  .sideBar {
+    display: none;
   }
 }

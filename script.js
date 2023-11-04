@@ -43,3 +43,4 @@ h3Tag.onmouseout = function () {
 gsap.from(`.h1`, { duration: 1, y: `100%`, ease: `power2.inOut` });
 gsap.from(`.h2`, { duration: 1.5, y: `100%`, ease: `power2.inOut` });
 gsap.from(`.h3`, { duration: 2, y: `100%`, ease: `power2.inOut` });
+gsap.from(`.sideBar`, { duration: 4, y: `100%`, ease: `power2.inOut` });
