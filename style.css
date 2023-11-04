@@ -60,6 +60,9 @@ a:hover span:nth-child(2) {
 a:hover span {
   color: #fff;
 }
+.aboutH1 {
+  height: 100vh;
+}
 .aboutH1 h1 {
   font-size: 100px;
   color: #fff;
@@ -140,6 +143,21 @@ form button:hover {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.164);
 }
+@media (max-width: 1000px) {
+  .textContainer {
+    margin-left: 0rem;
+    padding: 2rem;
+  }
+  #h1 {
+    font-size: 120px;
+  }
+  #h2 {
+    font-size: 100px;
+  }
+  #h3 {
+    font-size: 120px;
+  }
+}
 @media (max-width: 600px) {
   .textContainer {
     margin-left: 0rem;
@@ -153,5 +171,22 @@ form button:hover {
   }
   #h3 {
     font-size: 100px;
+  }
+  .aboutH1 {
+    height: 50vh;
+  }
+  .aboutH1 h1 {
+    font-size: 30px;
+    color: #fff;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+  .aboutText {
+    padding: 2rem;
+  }
+  .aboutText h1 {
+    font-size: 30px;
+  }
+  .aboutTextP1 {
+    font-size: 20px;
   }
 }
