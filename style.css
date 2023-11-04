@@ -14,7 +14,6 @@ body {
 /* Landingpage */
 .textContainer {
   margin-left: 10rem;
-  gap: 200rem;
   cursor: pointer;
 }
 
@@ -36,18 +35,6 @@ body {
 
 .hide {
   display: none;
-}
-
-@media (max-width = 600px) {
-  #h1 {
-    font-size: 50px;
-  }
-  #h2 {
-    font-size: 100px;
-  }
-  #h3 {
-    font-size: 100px;
-  }
 }
 
 /* About page */
@@ -152,4 +139,18 @@ form button {
 form button:hover {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.164);
+}
+@media (max-width: 600px) {
+  .textContainer {
+    margin-left: 0rem;
+  }
+  #h1 {
+    font-size: 100px;
+  }
+  #h2 {
+    font-size: 100px;
+  }
+  #h3 {
+    font-size: 100px;
+  }
 }

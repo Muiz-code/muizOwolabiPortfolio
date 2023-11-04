@@ -39,3 +39,7 @@ h3Tag.onmouseover = function () {
 h3Tag.onmouseout = function () {
   h3Tag.innerHTML = `Muiz`;
 };
+
+gsap.from(`.h1`, { duration: 1, y: `100%`, ease: `power2.inOut` });
+gsap.from(`.h2`, { duration: 2, y: `100%`, ease: "expoScale(0.5,7,none)" });
+gsap.from(`.h3`, { duration: 3, y: `100%` });
