@@ -49,6 +49,7 @@ a span {
   padding: 2rem 0rem 2rem 0rem;
   cursor: pointer;
   transition: 0.5s linear;
+  text-decoration: none;
 }
 
 a:hover span:nth-child(1):after {
@@ -188,5 +189,11 @@ form button:hover {
   }
   .aboutTextP1 {
     font-size: 20px;
+  }
+  .formInput {
+    gap: 1rem;
+  }
+  .aboutContainer {
+    padding-bottom: 2rem;
   }
 }
