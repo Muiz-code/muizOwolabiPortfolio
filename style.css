@@ -181,13 +181,37 @@ form button:hover {
   display: none;
 }
 
-.imageCont {
+.imageCont,
+.work0,
+.work2 {
   animation: 2s ease-out 0s 1 slideInRight;
 }
 .aboutH1,
-.name {
+.name,
+.work1,
+.work3 {
   animation: 1s ease-out 0s 1 slideInLeft;
   padding: 40px;
+}
+
+/* workContainer */
+.workContainer {
+  gap: 20px;
+}
+.work a span {
+  letter-spacing: 2px;
+  padding: 2rem 0rem 2rem 0rem;
+  cursor: pointer;
+  transition: 0.5s linear;
+  text-decoration: none;
+}
+
+.work a:hover span:nth-child(1):after {
+  content: "Go Live";
+  color: red;
+}
+.work a:hover span:nth-child(2) {
+  margin-left: 30px;
 }
 
 @media (max-width: 1000px) {
