@@ -60,7 +60,7 @@ body {
 .gap {
   gap: 5rem;
 }
-a span {
+.name a span {
   letter-spacing: 2px;
   padding: 2rem 0rem 2rem 0rem;
   cursor: pointer;
@@ -68,13 +68,13 @@ a span {
   text-decoration: none;
 }
 
-a:hover span:nth-child(1):after {
+.name a:hover span:nth-child(1):after {
   content: "owolabi";
 }
-a:hover span:nth-child(2) {
+.name a:hover span:nth-child(2) {
   margin-left: 30px;
 }
-a:hover span {
+.name a:hover span {
   color: #fff;
 }
 .aboutH1 {
@@ -191,12 +191,21 @@ form button:hover {
 .work1,
 .work3 {
   animation: 1s ease-out 0s 1 slideInLeft;
-  padding: 40px;
 }
 
 /* workContainer */
 .workContainer {
   gap: 20px;
+}
+.workText {
+  color: #fff;
+  margin-top: 1rem;
+}
+.workText h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 5rem;
+  font-family: "Noto Sans TC", sans-serif;
 }
 .work a span {
   letter-spacing: 2px;
@@ -211,6 +220,22 @@ form button:hover {
   color: red;
 }
 .work a:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+.workHover1 a span {
+  letter-spacing: 2px;
+  padding: 2rem 0rem 2rem 0rem;
+  cursor: pointer;
+  transition: 0.5s linear;
+  text-decoration: none;
+}
+
+.workHover1 a:hover span:nth-child(1)::before {
+  content: "Go Live ";
+  color: red;
+}
+.workHover1 a:hover span:nth-child(2) {
   margin-left: 30px;
 }
 
@@ -274,5 +299,8 @@ form button:hover {
   }
   .contactLink {
     display: flex;
+  }
+  .work a span {
+    font-size: 15px;
   }
 }
