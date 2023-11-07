@@ -151,14 +151,14 @@ body {
 
 form button {
   padding: 0.5rem 2rem;
-  color: white;
-  background: none;
+  color: white !important;
+  background: rgba(241, 238, 238, 0.164) !important;
   border: none;
   border-radius: 1rem;
 }
 form button:hover {
-  transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.164);
+  transform: scale(1.05);
+  background-color: rgba(18, 18, 18, 0.164) !important;
 }
 
 @keyframes slideInLeft {

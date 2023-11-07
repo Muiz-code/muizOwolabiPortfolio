@@ -43,7 +43,7 @@
     <div>
       <nav class="navbar shadow-0 mt-2">
         <div
-          class="navbar-brand ms-auto text-light fs-3 fw-medium"
+          class="navbar-brand ms-auto text-light fs-3 fw-medium name"
           style="font-family: 'Edu TAS Beginner', cursive;"
         >
           <a href="/index.html" class="text-light"><span>muiz.</span></a>
@@ -70,19 +70,25 @@
               </p>
               <form
                 action="https://formspree.io/f/xbjvwqdb"
-                class="d-flex flex-column formInput p-lg-5 p-md-0"
+                class="d-flex flex-column formInput p-5 justify-items-center border"
                 method="POST"
               >
                 <label>
                   Your Name:
-                  <input type="text" class="border-0 shadow" name="Name" />
+                  <input
+                    type="text"
+                    class="border-0 shadow w-100"
+                    name="Name"
+                  />
                 </label>
                 <label>
                   Your Message:
                   <textarea name="Message" class="border-0 shadow"></textarea>
                 </label>
                 <!-- your other form fields go here -->
-                <button type="submit" class="shadow">Send</button>
+                <button type="submit" class="shadow w-50 btn p-3 fs-5">
+                  Send
+                </button>
               </form>
               <section class="mb-4 contactLink">
                 <!-- Twitter -->
