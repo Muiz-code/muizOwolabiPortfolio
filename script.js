@@ -7,6 +7,9 @@ const work = document.querySelector("#work");
 const h3Tag = document.querySelector("#h3");
 const contact = document.querySelector("#contact");
 
+const toggler = document.querySelector("#icon1");
+const togglerAppear = document.querySelector("#icon2");
+
 hTag.onmouseover = function () {
   hTag.innerHTML = `${about.textContent}`;
 
@@ -38,6 +41,13 @@ h3Tag.onmouseover = function () {
 };
 h3Tag.onmouseout = function () {
   h3Tag.innerHTML = `Muiz`;
+};
+toggler.onmouseover = function () {
+  toggler.innerHTML = `<i class="fa-solid fa-bars-staggered"></i
+  >`;
+};
+toggler.onmouseout = function () {
+  toggler.innerHTML = `<i class="fa-solid fa-bars">`;
 };
 
 gsap.from(`.h1`, { duration: 1, y: `100%`, ease: `power2.inOut` });

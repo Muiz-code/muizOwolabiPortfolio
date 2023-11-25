@@ -10,6 +10,9 @@ body {
   flex-direction: column;
   width: 100%;
 }
+.navContainer a {
+  display: none;
+}
 
 /* SideBar */
 .sideBar {
@@ -302,5 +305,8 @@ form button:hover {
   }
   .work a span {
     font-size: 15px;
+  }
+  .navContainer a {
+    display: run-in;
   }
 }
