@@ -38,16 +38,45 @@
     />
 
     <title>ABOUT MUIZ OWOLABI</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+        font-family: "Outfit", sans-serif;
+        color: #fff;
+      }
+
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        backdrop-filter: blur(10px);
+      }
+
+      .navbar-brand a {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      a span {
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+      }
+
+      a:hover span {
+        color: #ff4c4c;
+        transform: translateX(5px);
+      }
+    </style>
   </head>
 
-  <body style="background: black;">
+  <body style="background: black">
     <div>
-      <nav class="navbar fixed-top shadow-0 mt-2">
-        <div
-          class="navbar-brand ms-auto text-light fs-3 fw-medium name"
-          style="font-family: 'Edu TAS Beginner', cursive;"
-        >
-          <a href="/index.html" class="text-light"><span>muiz.</span></a>
+      <nav class="navbar fixed-top shadow-sm p-3">
+        <div class="navbar-brand mx-auto">
+          <a href="/index.html">muiz<span class="text-danger">.</span></a>
         </div>
       </nav>
 
@@ -68,9 +97,7 @@
           class="col d-flex align-content-center justify-content-center aboutContainer"
         >
           <div class="col-lg-6 d-flex flex-column aboutText">
-            <h1>
-              About
-            </h1>
+            <h1>About</h1>
             <div class="aboutTextP">
               <p class="text-start aboutTextP1">
                 Hi, I'm Muiz. I'm a multi-talented human with over 2+ years of
@@ -111,7 +138,7 @@
                 education and much more in the PDF attached bellow: <br />
               </p>
 
-              <a href="/Asset/Muiz Owolabi CV .pdf" class="aboutTextA"
+              <a href="/Asset/resume_owolabi_muiz.pdf" class="aboutTextA"
                 >My Resume {pdf 70kb}
               </a>
             </div>
@@ -122,7 +149,7 @@
         <!-- Twitter -->
         <a
           class="btn btn-primary btn-floating m-1"
-          style="background-color: #55acee;"
+          style="background-color: #55acee"
           href="https://twitter.com/ThatMuiz"
           role="button"
           ><i class="fab fa-twitter"></i
@@ -131,7 +158,7 @@
         <!-- Instagram -->
         <a
           class="btn btn-primary btn-floating m-1"
-          style="background-color: #ac2bac;"
+          style="background-color: #ac2bac"
           href="https://www.instagram.com/that_muiz/"
           role="button"
           ><i class="fab fa-instagram"></i
@@ -140,7 +167,7 @@
         <!-- Linkedin -->
         <a
           class="btn btn-primary btn-floating m-1"
-          style="background-color: #0082ca;"
+          style="background-color: #0082ca"
           href="https://www.linkedin.com/in/owolabi-muiz-77a9aa147/"
           role="button"
           ><i class="fab fa-linkedin-in"></i
@@ -148,7 +175,7 @@
         <!-- Github -->
         <a
           class="btn btn-primary btn-floating m-1"
-          style="background-color: #333333;"
+          style="background-color: #333333"
           href="https://github.com/BeastEyE-code"
           role="button"
           ><i class="fab fa-github"></i

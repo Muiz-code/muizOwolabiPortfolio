@@ -13,6 +13,15 @@ body {
 .navContainer a {
   display: none;
 }
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand a {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 
 /* SideBar */
 .sideBar {
